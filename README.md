@@ -1,1 +1,2 @@
-# MOONFASE <p>Aplicação que retorna a faze da lua de uma data fornecida</p>
+#🌕🌓🌗🌑 MOONFASE 
+<p>Aplicação que retorna a fase da lua de uma data fornecida</p>
