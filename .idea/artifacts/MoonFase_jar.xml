@@ -1,0 +1,8 @@
+<component name="ArtifactManager">
+  <artifact type="jar" name="MoonFase:jar">
+    <output-path>$PROJECT_DIR$/out/artifacts/MoonFase_jar</output-path>
+    <root id="archive" name="MoonFase.jar">
+      <element id="module-output" name="MoonFase" />
+    </root>
+  </artifact>
+</component>
