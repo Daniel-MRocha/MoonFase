@@ -1,0 +1,3 @@
+module MoonFase {
+    exports MoonFasePkg;
+}
