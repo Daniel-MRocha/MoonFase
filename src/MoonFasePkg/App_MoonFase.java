@@ -6,7 +6,7 @@ import java.time.format.DateTimeParseException;
 
 public class App_MoonFase {
 
-    public static String calculateofFase(String dateRef){
+    public static String calculateOfFase(String dateRef){
         try {
             LocalDate dataReference = LocalDate.parse(dateRef);
 
@@ -16,13 +16,13 @@ public class App_MoonFase {
 
             int algoritmoLunar = (((year + 2) * 11) + day + month) % 30;
 
-            return lua(algoritmoLunar).name();
+            return moon(algoritmoLunar).name();
         }catch (DateTimeParseException e){
             System.out.println(e);
             return null;
         }
     }
-    private static E_Fase lua(int algoLunar){
+    private static E_Fase moon(int algoLunar){
         E_Fase result = null;
         if(algoLunar>=0 && algoLunar <=7){
             result = E_Fase.NOVA;
@@ -30,7 +30,7 @@ public class App_MoonFase {
             result = E_Fase.CRESCENTE;
         }else if(algoLunar > 14 && algoLunar <=21){
             result = E_Fase.CHEIA;
-        }else if(algoLunar>21 && algoLunar <=28){
+        }else if(algoLunar>21 && algoLunar <=29){
             result = E_Fase.MINGUANTE;
         }
         return result;
